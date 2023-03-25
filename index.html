@@ -11,9 +11,13 @@
 <script src="appscripts/jquery.poptrox-2.2.js"></script>
 <script src="appscripts/skel.min.js"></script>
 <script src="appscripts/init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+<script defer type="text/javascript" src="appscripts/main.js"></script>
 <noscript>
-<link rel="stylesheet" href="css/skel-noscript.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/skel-noscript.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/appstyle.css">
 </noscript>
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="css/ie/v8.css">
@@ -54,7 +58,7 @@
     <p> The British colonises Singapore, initially as the Straits Settlement from 1826 to 1867, and as a Crown Colony after 1867. English Language was brought over to be used in commerce and governance. Migrants from India and China also brought over Indian languages such Tamil and Punjabi and Chinese languages (dialects) such as Hokkien, Cantonese, and Hainanese. These immigrants mainly come from Southern India and China. </p>
   </div>
 </article>
-<article id="first" class="container box style1 right"> <a href="#" class="image full"><img src="images/surrender.jpg" alt=""></a>
+<article id="first" class="container box style1 right"> <a href="#" class="image full"><img src="images/surrender.jpg" alt="" ></a>
   <div class="inner">
     <header>
       <h2> Japanese Occupation <br>
@@ -99,28 +103,24 @@
     <p> The Speak Good English Movement was launched on 29 April 2000, in a bid to combat Singlish. Singapore has evolved to be a globalised city, with multiple languages and ethnicities on the island. As seen by the warning sign at a construction site on the left, Korean and Bengali is included in addition to the 4 official languages. </p>
   </div>
 </article>
-<article class="container box style2">
+<article class="container box style3">
   <header>
-    <h2> Changes over the years </h2>
-    <p>Click on each graph to see <br>
-      the changes of languages over the years. <br>
-    (charts will be placed below using chartjs) </p>
+    <h2> Status of Languages in Singapore </h2>
   </header>
-  <div class="inner gallery">
-    <div class="row flush">
-      <div class="3u"><a href="images/fulls/01.jpg" class="image full"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum"></a></div>
-      <div class="3u"><a href="images/fulls/02.jpg" class="image full"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity"></a></div>
-      <div class="3u"><a href="images/fulls/03.jpg" class="image full"><img src="images/thumbs/03.jpg" alt="" title="Raven"></a></div>
-      <div class="3u"><a href="images/fulls/04.jpg" class="image full"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please"></a></div>
+  <body>
+    <div class="wrapper">
+      <g1>Language Most Frequently Spoken at Home For Resident Population Aged 5 and Above in 2020</g1>
+      <canvas id="piechart" width="800" height="200"></canvas>
+
     </div>
-    <div class="row flush">
-      <div class="3u"><a href="images/fulls/05.jpg" class="image full"><img src="images/thumbs/05.jpg" alt="" title="Cherish"></a></div>
-      <div class="3u"><a href="images/fulls/06.jpg" class="image full"><img src="images/thumbs/06.jpg" alt="" title="Different."></a></div>
-      <div class="3u"><a href="images/fulls/07.jpg" class="image full"><img src="images/thumbs/07.jpg" alt="" title="History was made here"></a></div>
-      <div class="3u"><a href="images/fulls/08.jpg" class="image full"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away"></a></div>
+    <div class="wrapper">
+      <g1>Language Most Frequently Spoken at Home For Resident Population Aged 5 and Above in 2010</g1>
+      <canvas id="piechart2" width="800" height="200"></canvas>
+
     </div>
-  </div>
-</article>
+    <g2>Source: <a href="https://www.channelnewsasia.com/singapore/census-2020-more-households-speaking-english-1966731"> CNA, Mediacorp</a></g2>
+    <p> The pie charts above show that English has becoming more dominant at homes in just 10 years. The percentage of people speaking languages outside of the four official languages and Chinese dialects have also increased, showing our diversity. </p>
+  </article>
 <article class="container box style3">
   <header>
     <h2> Map of Singapore</h2>
