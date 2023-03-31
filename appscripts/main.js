@@ -66,4 +66,57 @@ new Chart ("piechart2", {
 }
 });
 
+var years = [1957,1980,1990,2000,2005,2010,2015,2020];
+var english = [1.8,11.6,18.8,23.0,28.1,32.3,36.9,48.3];
+var mandarin = [0.1,10.2,23.7,35.0,36.0,35.6,34.9,29.9];
+var dialects = [74.4,59.5,39.6,23.8,18.2,14.3,12.2,8.7];
+var malay = [13.5,13.9,14.3,14.1,13.2,12.2,10.7,9.2];
+var tamil = [5.2,3.1,2.9,3.2,3.1,3.3,3.3,2.5];
+var others = [5,1.7,0.7,0.9,1.4,2.3,2.0,1.4];
+
+new Chart("myChart", {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [
+        { 
+          data: english,
+          label: "English",
+          borderColor: 'rgb(255, 205, 86)',
+          fill: false
+        },
+        { 
+          data: mandarin,
+          label: "Mandarin",
+          borderColor: 'rgb(54, 162, 235)',
+          fill: false
+        },
+        { 
+          data: dialects,
+          label: "Chinese Dialects",
+          borderColor: 'rgb(204, 230, 255)',
+          fill: false
+        },
+        { 
+          data: malay,
+          label: "Malay",
+          borderColor: 'rgb(255, 99, 132)',
+          fill: false
+        },
+        { 
+          data: tamil,
+          label: "Tamil",
+          borderColor: 'rgb(153, 255, 51)',
+          fill: false
+        },
+        { 
+          data: others,
+          label: "Others",
+          borderColor: 'rgb(179, 179, 179)',
+          fill: false
+        }
+      ]
+    }
+});
+
 
