@@ -12,12 +12,15 @@
 <script src="appscripts/skel.min.js"></script>
 <script src="appscripts/init.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <link rel="stylesheet" type="text/css" href="css/appstyle.css">
 <script defer type="text/javascript" src="appscripts/main.js"></script>
-<noscript>
 <link rel="stylesheet" type="text/css" href="css/skel-noscript.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+<link rel="stylesheet" type="text/css" href="css/mapstyle.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    
 </noscript>
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="css/ie/v8.css">
@@ -133,43 +136,29 @@
 <article class="container box style3">
   <header>
     <h2> Map of Singapore</h2>
-    <p>Different regions of Singapore used to be dominated by <br>
-      different languages in the past. <br>
+    <p>Different regions of Singapore used to be dominated by different languages in the past. <br>
       Click on the interactive map to find out more! <br>
-    (an interactive map will be placed below)</p>
   </header>
-  <form action="#">
-    <div class="row half">
-      <div class="6u">
-        <input type="text" class="text" name="name" placeholder="Name">
-      </div>
-      <div class="6u">
-        <input type="text" class="text" name="email" placeholder="Email">
-      </div>
-    </div>
-    <div class="row half">
-      <div class="12u">
-        <textarea name="message" placeholder="Message"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <div class="12u">
-        <ul class="actions">
-          <li><a href="#" class="button form">Send Message</a></li>
-        </ul>
-      </div>
-    </div>
-  </form>
+  <body>
+    
+    <div id="a1">
+
+    <!-- Add a map <div> element:  -->
+        <div id="map"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="appscripts/Singapore_Population_2017.geojson"></script>
+        <script src="appscripts/map.js"></script> </div>
+
+    
+</body>
+<br>
+    <g2>Source: <a href="https://www.gov.sg/article/hdbs-ethnic-integration-policy-why-it-still-matters">  Government of Singapore </a></g2>
+  </body>
 </article>
 <section id="footer">
-  <ul class="icons">
-    <li><a href="#" class="icon icon-twitter solo"><span>Twitter</span></a></li>
-    <li><a href="#" class="icon icon-facebook solo"><span>Facebook</span></a></li>
-    <li><a href="#" class="icon icon-google-plus solo"><span>Google+</span></a></li>
-    <li><a href="#" class="icon icon-pinterest solo"><span>Pinterest</span></a></li>
-    <li><a href="#" class="icon icon-dribbble solo"><span>Dribbble</span></a></li>
-    <li><a href="#" class="icon icon-linkedin solo"><span>LinkedIn</span></a></li>
-  </ul>
+    <ul class="icons">
+      <li> And the journey continues... </li>
+    </ul>
   <div class="copyright">
     <ul class="menu">
       <li>&copy; Kenny Goh. All rights reserved.</li>
