@@ -7,21 +7,20 @@
 <!--[if lte IE 8]>
 <script src="css/ie/html5shiv.js"></script>
 <![endif]-->
-<script src="appscripts/jquery.min.js"></script>
-<script src="appscripts/jquery.poptrox-2.2.js"></script>
-<script src="appscripts/skel.min.js"></script>
-<script src="appscripts/init.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<link rel="stylesheet" type="text/css" href="css/appstyle.css">
-<script defer type="text/javascript" src="appscripts/main.js"></script>
 <link rel="stylesheet" type="text/css" href="css/skel-noscript.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/appstyle.css">
 <link rel="stylesheet" type="text/css" href="css/mapstyle.css">
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    
-</noscript>
+<script src="appscripts/jquery.min.js"></script>
+<script src="appscripts/jquery.poptrox-2.2.js"></script>
+<script src="appscripts/skel.min.js"></script>
+<script src="appscripts/init.js"></script>
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script defer type="text/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script defer type="text/javascript" src="appscripts/main.js"></script>
+<script defer type="text/javascript" src="appscripts/map.js"></script> 
+<!-- <script defer type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="css/ie/v8.css">
 <![endif]-->
@@ -127,7 +126,7 @@
   <body>
       <div class="wrapper">
         <g1>Languages Spoken Most Frequently At Home </g1> <g2>(1957-2020)</g2>
-        <canvas id="myChart" width="1600" height="900"></canvas>
+        <canvas id="myChart" width="80" height="40"></canvas>
       </div>
       <g2>Source: <a href="https://www.singstat.gov.sg/find-data/search-by-theme/population/education-language-spoken-and-literacy/visualising-data/home-language-of-residents-aged-5-years-and-over-dashboard"> Department of Statistics, Singapore</a></g2>
     <p> We can see the steep decline of Chinese dialects in 1980, which can be largely attributed to the Speak Mandarin Campaign. As for Malay, it seems that it has remained relatively stable, but it should be noted that languages such as Bugis, Javanese and Boyanese has fallen in favour of Malay. The use of English has even grown more sharply since the introduction of the Speak Good English movement in 2000. Lastly, for Tamil, it has also remained largely stable over the years, similar to Malay. </p>
@@ -141,19 +140,12 @@
   </header>
   <body>
     
-    <div id="a1">
-
+    <div id="a1"> 
     <!-- Add a map <div> element:  -->
         <div id="map"></div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="appscripts/Singapore_Population_2017.geojson"></script>
-        <script src="appscripts/map.js"></script> </div>
+        <br> Source: <a href="https://www.gov.sg/article/hdbs-ethnic-integration-policy-why-it-still-matters">  Government of Singapore </a>
+      </body></div>
 
-    
-</body>
-<br>
-    <g2>Source: <a href="https://www.gov.sg/article/hdbs-ethnic-integration-policy-why-it-still-matters">  Government of Singapore </a></g2>
-  </body>
 </article>
 <section id="footer">
     <ul class="icons">
